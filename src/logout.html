@@ -1,0 +1,17 @@
+<template class="ui container">
+  <section class="ui stacked segment">
+    <div class="ui grid">
+      <aside class="six wide column">
+        <img src="images/homer.png" class="ui medium image">
+      </aside>
+      <div class="ui ten wide column fluid form">
+        <div class="ui stacked segment">
+          <form submit.delegate="logout($event)">
+            <h3 class="ui header">Are you sure you want to log out?</h3>
+            <button class="ui blue submit button">Logout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

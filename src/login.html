@@ -1,0 +1,26 @@
+<template>
+  <section class="ui raised segment">
+    <div class="ui grid">
+      <aside class="ui six wide column">
+        <img src="images/homer2.png" class="ui medium image">
+      </aside>
+      <div class="ui ten wide column fluid form">
+        <div class="ui stacked segment">
+          <form submit.delegate="login($event)">
+            <h3 class="ui header">Log-in</h3>
+            <div class="field">
+              <label>Email</label> <input placeholder="Email" value.bind="email" />
+            </div>
+            <div class="field">
+              <label>Password</label> <input type="password" value.bind="password" />
+            </div>
+            <button class="ui blue submit button">Login</button>
+          </form>
+          <h3>${prompt}</h3>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</template>

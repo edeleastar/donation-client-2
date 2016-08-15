@@ -1,0 +1,49 @@
+<template>
+
+  <section class="ui raised segment">
+
+    <section class="ui raised segment">
+      <div class="ui grid ">
+        <div class="ui form six wide column">
+          <div class="ui stacked segment">
+            <form submit.trigger="makeDonation()">
+              <div class="grouped inline fields">
+                <h3>Enter Amount </h3>
+                <div class="field">
+                  <label>Amount</label> <input type="number" value.bind="amount" >
+                </div>
+              </div>
+              <div class="grouped inline fields">
+                <h3> Select Method </h3>
+                <div class="field" repeat.for="method of methods">
+                  <div class="ui radio checkbox">
+                    <input type="radio" model.bind="method" checked.bind="$parent.selectedMethod">
+                    <label>${method}</label>
+                  </div>
+                </div>
+              </div>
+              <div class="grouped inline fields">
+                <h3> Select Candidate </h3>
+                <div class="field" repeat.for="candidate of candidates">
+                  <div class="ui radio checkbox">
+                    <input type="radio" model.bind="candidate" checked.bind="$parent.selectedCandidate">
+                    <label>${candidate.lastName}, ${candidate.firstName}</label>
+                  </div>
+                </div>
+              </div>
+              <button class="ui blue submit button">Donate</button>
+            </form>
+          </div>
+        </div>
+        <aside class="six wide column">
+          <img src="images/homer4.jpeg" class="ui medium image">
+        </aside>
+      </div>
+    </section>
+    <div class="ui  divider"></div>
+      <div class="ui teal progress" data-percent="${progress}" id="mainprogress">
+        <div class="bar"></div>
+      </div>
+    </section>
+
+  </template>
