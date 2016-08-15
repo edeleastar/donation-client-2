@@ -43,7 +43,7 @@ define('config',['exports'], function (exports) {
     value: true
   });
   exports.default = {
-    baseUrl: 'http://localhost:4000',
+    baseUrl: 'http://localhost:4001',
     loginUrl: 'api/authenticate',
     tokenName: 'donation'
   };
