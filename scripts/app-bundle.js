@@ -43,7 +43,7 @@ define('config',['exports'], function (exports) {
     value: true
   });
   exports.default = {
-    baseUrl: 'http://localhost:4001',
+    baseUrl: 'https://enigmatic-coast-32556.herokuapp.com',
     loginUrl: 'api/authenticate',
     tokenName: 'donation'
   };
